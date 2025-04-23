@@ -5,11 +5,10 @@
   "installCommand": "npm install",
   "framework": null,
   "outputDirectory": "out",
-  "cleanUrls": true,
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/$1"
     }
   ]
-} 
+}
