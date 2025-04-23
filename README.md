@@ -65,7 +65,7 @@ npm run build
 yarn build
 ```
 
-## Estrutura do Projeto
+## Estrutura do Projetoas
 
 ```
 .
