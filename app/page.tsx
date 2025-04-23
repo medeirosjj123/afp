@@ -351,6 +351,7 @@ export default function Home() {
         ctaUrl="#cadastro"
         backgroundColor="bg-gradient-to-b from-gray-900 to-black"
         textColor="text-white"
+        imageUrl="/images/hero/hero1.jpg"
       />
       
       <TestimonialsSection2
