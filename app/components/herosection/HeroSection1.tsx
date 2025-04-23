@@ -28,40 +28,38 @@ export default function HeroSection1({
   backgroundColor = 'bg-gradient-to-r from-primary-50 to-primary-100',
   textColor = 'text-neutral-900',
 }: HeroSection) {
-  // Definindo classes de background com Tailwind se imageUrl estiver presente
-  const bgClasses = imageUrl
-    ? `bg-[url('${imageUrl}')] bg-cover bg-center`
-    : backgroundColor;
   return (
     <Section
       id={id}
       title=""
-      backgroundColor={bgClasses}
+      backgroundColor={backgroundColor}
       textColor={textColor}
-      className="min-h-[80vh] flex items-center justify-center"
+      className="min-h-[80vh] flex items-center"
     >
       <div className="container-section">
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-8 max-w-xl"
-        >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            {headline}
-          </h1>
-          <p className="text-xl md:text-2xl font-medium text-gray-300">
-            {description}
-          </p>
-          <motion.a
-            href={ctaUrl}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="btn btn-hero-cta"
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-8"
           >
-            {ctaText}
-          </motion.a>
-        </motion.div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              {headline}
+            </h1>
+            <p className="text-xl md:text-2xl font-medium text-gray-300">
+              {description}
+            </p>
+            <motion.a
+              href={ctaUrl}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn btn-hero-cta"
+            >
+              {ctaText}
+            </motion.a>
+          </motion.div>
+        </div>
       </div>
     </Section>
   );
