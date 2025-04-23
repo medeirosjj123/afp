@@ -108,7 +108,7 @@ export default function BonusSection({
                   : 'bg-white ring-1 ring-gray-900/70 hover:ring-gray-900 hover:shadow-md'}
                 ${index !== bonuses.length - 1 ? 'mb-2' : ''}`}
             >
-              <div className="flex items-start space-x-6">
+              <div className="flex flex-col md:flex-row items-start md:space-x-6 space-y-4 md:space-y-0">
                 <div className="relative w-32 h-32 flex-shrink-0">
                   <Image
                     src={bonus.imageUrl}
@@ -130,7 +130,7 @@ export default function BonusSection({
                       </p>
                     </div>
 
-                    <div className="ml-8 text-right">
+                    <div className="ml-0 md:ml-8 text-left md:text-right">
                       <div className="text-sm font-medium mb-1 text-gray-500">
                         Valor:
                       </div>
