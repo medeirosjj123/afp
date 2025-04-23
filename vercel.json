@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "next build",
+  "buildCommand": "next build && next export",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": null,
