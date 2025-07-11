@@ -10,7 +10,7 @@
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import Section from '../Section';
+import Section from '../common/Section';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';

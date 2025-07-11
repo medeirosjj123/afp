@@ -14,6 +14,7 @@ interface SectionProps {
   title?: string;
   subtitle?: string;
   backgroundColor?: string;
+  textColor?: string;
   children?: React.ReactNode;
 }
 
@@ -47,6 +48,7 @@ const Section = ({
   title,
   subtitle,
   backgroundColor = 'bg-white',
+  textColor = 'text-gray-900',
   children
 }: SectionProps) => {
   return (
@@ -60,7 +62,7 @@ const Section = ({
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={titleAnimation}
-                className="text-4xl font-bold text-gray-900 mb-4"
+                className={`text-4xl font-bold mb-4 ${textColor}`}
               >
                 {title}
               </m.h2>
@@ -71,7 +73,7 @@ const Section = ({
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={subtitleAnimation}
-                className="text-xl text-gray-600"
+                className={`text-xl ${textColor}`}
               >
                 {subtitle}
               </m.p>

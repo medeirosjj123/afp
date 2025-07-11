@@ -18,7 +18,7 @@ import { motion } from 'framer-motion';
 import { createElement } from 'react';
 import { IconType } from 'react-icons';
 import { FaGift } from 'react-icons/fa';
-import Section from '../Section';
+import Section from '../common/Section';
 
 interface Bonus {
   id: number;

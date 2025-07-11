@@ -12,7 +12,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Section from '../Section';
+import Section from '../common/Section';
 
 interface Benefit {
   title: string;

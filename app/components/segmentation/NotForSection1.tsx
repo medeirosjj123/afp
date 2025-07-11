@@ -11,7 +11,7 @@
 'use client';
 
 import { SegmentationSection } from '../types';
-import Section from '../Section';
+import Section from '../common/Section';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 

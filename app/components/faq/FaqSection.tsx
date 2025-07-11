@@ -10,7 +10,7 @@
 
 import { LazyMotion, domAnimation, m, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import Section from '../Section';
+import Section from '../common/Section';
 
 interface FaqItem {
   question: string;

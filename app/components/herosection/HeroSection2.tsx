@@ -13,7 +13,7 @@
  */
 
 import { LazyMotion, domAnimation, m } from 'framer-motion';
-import Section from '../Section';
+import Section from '../common/Section';
 
 interface HeroSection2Props {
   id?: string;

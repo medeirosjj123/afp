@@ -9,7 +9,7 @@
  */
 
 import { LazyMotion, domAnimation, m } from 'framer-motion';
-import Section from '../Section';
+import Section from '../common/Section';
 
 interface FinalCtaSectionProps {
   id?: string;

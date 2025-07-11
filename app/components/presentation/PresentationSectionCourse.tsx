@@ -13,7 +13,7 @@
 'use client';
 
 import { PresentationSection } from '../types';
-import Section from '../Section';
+import Section from '../common/Section';
 import { motion } from 'framer-motion';
 import { FaLock, FaFire } from 'react-icons/fa';
 import { createElement } from 'react';

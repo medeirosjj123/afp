@@ -17,7 +17,7 @@ import Image from 'next/image';
 import { createElement } from 'react';
 import { IconType } from 'react-icons';
 import { FaGlobeAmericas, FaYoutube, FaBook, FaTrophy } from 'react-icons/fa';
-import Section from '../Section';
+import Section from '../common/Section';
 
 interface Achievement {
   number: string;

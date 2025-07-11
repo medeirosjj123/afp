@@ -132,8 +132,8 @@ export default function Home() {
     content: "Prepare-se para uma imersão completa nos segredos mais bem guardados do SEO. Este não é mais um curso básico - é um sistema completo para dominar as primeiras posições do Google e construir um império digital lucrativo.",
     features: [
       {
-        title: "DOMINANDO O ALGORITMO DO GOOGLE",
-        description: "Os 3 segredos PROIBIDOS que os gurus de SEO não revelam, incluindo a técnica secreta de OnPage que faz sites explodirem no Google em 2024.",
+        title: "MÓDULO 1: A GRANDE REVELAÇÃO - O Jogo Oculto do Google",
+        description: "Aqui, eu te entrego o mapa que os 'gurus do O Quê' escondem a sete chaves. Você vai entender como o Google realmente pensa, não como eles dizem que ele pensa. É o fim da paralisia técnica. Você para de adivinhar e começa a ditar as regras do jogo.",
         highlights: [
           { text: "Técnica avançada de OnPage que multiplica rankings" },
           { text: "Método exclusivo de indexação acelerada" },
@@ -141,8 +141,8 @@ export default function Home() {
         ]
       },
       {
-        title: "NICHOS INEXPLORADOS DO SEO",
-        description: "A fórmula secreta para encontrar nichos com baixa competição e alto potencial de tráfego, onde você pode dominar as primeiras posições em semanas.",
+        title: "MÓDULO 2: O MAPA DO TESOURO - Encontrando Ouro em Território Inexplorado",
+        description: "Enquanto 99% se digladia por migalhas nos mesmos nichos saturados, você receberá meu sistema 'Copia e Cola' para encontrar oceanos azuis de lucro. A culpa não é sua por não saber onde começar; o sistema foi feito para te confundir. Aqui, nós te damos clareza.",
         highlights: [
           { text: "Mapa dos nichos com maior ROI em 2024" },
           { text: "Método de análise de competição SEO" },
@@ -150,8 +150,8 @@ export default function Home() {
         ]
       },
       {
-        title: "KEYWORDS QUE DOMINAM RANKINGS",
-        description: "O método secreto para descobrir as keywords mais valiosas que seus concorrentes não conhecem, incluindo termos que geram até R$50 por clique.",
+        title: "MÓDULO 3: O ARSENAL DE KEYWORDS - A Arte de Encontrar Dinheiro Escondido",
+        description: "Esqueça a teoria de 'volume de busca'. Isso é fumaça. Vou te mostrar como encontrar as palavras-chave que o seu cliente digita segundos antes de comprar. É a diferença entre ter um blog 'informativo' e uma máquina de vendas automática.",
         highlights: [
           { text: "Keywords com intenção de compra garantida" },
           { text: "Técnica de cluster de palavras-chave" },
@@ -159,8 +159,8 @@ export default function Home() {
         ]
       },
       {
-        title: "ARQUITETURA SEO IMBATÍVEL",
-        description: "O blueprint secreto que faz o Google amar seu site instantaneamente, usando técnicas avançadas de arquitetura de informação que ninguém está usando.",
+        title: "MÓDULO 4: A FORTALEZA DIGITAL - Construindo o Ativo que o Google Respeita",
+        description: "Seu site deixa de ser um 'castelo de areia' vulnerável a qualquer atualização do Google. Com este blueprint, você constrói uma fortaleza de autoridade que o algoritmo não apenas entende, mas favorece. É a sua apólice de seguro contra a irrelevância.",
         highlights: [
           { text: "Estrutura de silos semânticos avançada" },
           { text: "Sistema de interlinking estratégico" },
@@ -168,8 +168,8 @@ export default function Home() {
         ]
       },
       {
-        title: "CONTEÚDO QUE DOMINA RANKINGS",
-        description: "A fórmula proibida para criar conteúdo que rouba a primeira posição dos seus concorrentes, combinando SEO avançado com IA de última geração.",
+        title: "MÓDULO 5: A MÁQUINA DE CONTEÚDO - Produção em Massa com Alma Humana",
+        description: "Esta é a chave da 'Janela de Oportunidade'. Enquanto outros se afogam no 'deserto de conteúdo' ou criam lixo robótico com IA, você vai usar meu sistema para produzir conteúdo de alta qualidade em escala, resolvendo a dor da criação sem perder sua voz autêntica.",
         highlights: [
           { text: "Templates E-A-T que o Google ama" },
           { text: "Sistema de otimização semântica" },
@@ -177,8 +177,8 @@ export default function Home() {
         ]
       },
       {
-        title: "LINKS QUE EXPLODEM RANKINGS",
-        description: "As técnicas underground de link building que os sites top 1 usam, incluindo métodos white-hat que parecem black-hat de tão poderosos.",
+        title: "MÓDULO 6: A REDE DE AUTORIDADE - O Sistema de Links que Força o Respeito",
+        description: "Esqueça o 'mendigar por links'. Isso é humilhante e ineficaz. Vou te entregar o sistema que usamos para construir uma rede de autoridade que atrai links de forma natural e poderosa, fazendo o Google olhar para o seu site como uma referência inquestionável.",
         highlights: [
           { text: "Técnicas avançadas de outreach" },
           { text: "Sistema de guest post 2.0" },
@@ -186,8 +186,8 @@ export default function Home() {
         ]
       },
       {
-        title: "MONETIZAÇÃO EXPLOSIVA",
-        description: "O sistema definitivo para transformar tráfego orgânico em receita consistente, incluindo técnicas avançadas de CRO que multiplicam sua renda.",
+        title: "MÓDULO 7: A MÁQUINA DE RENDA - Convertendo Cliques em Liberdade Financeira",
+        description: "Este é o módulo que resolve a dor final: o 'Muro do AdSense'. Enquanto amadores são reprovados e desistem, você vai construir um ecossistema de monetização que vai muito além do AdSense, transformando cada visitante em uma fonte de renda passiva e previsível.",
         highlights: [
           { text: "Otimização avançada de conversão" },
           { text: "Sistemas de monetização múltipla" },
@@ -200,72 +200,72 @@ export default function Home() {
   const bonusesData = [
     {
       id: 1,
-      title: "Aulas Semanais para Tirar Dúvidas",
-      description: "Acesso direto ao especialista, resolução de casos reais e feedback personalizado para seu projeto.",
+      title: "BÔNUS 1: O ACOMPANHAMENTO ANTI-TRAVA",
+      description: "Este não é um bônus, é o coração do nosso movimento. Sabe o medo de ficar travado sozinho? Ele morre aqui. Toda semana, eu e você, ao vivo, resolvendo o seu problema, na sua tela. É a minha garantia pessoal de que você nunca mais vai desistir por falta de suporte.",
       price: "1.997,00",
       imageUrl: "/images/bonus/bonus1.jpg",
       highlight: true
     },
     {
       id: 2,
-      title: "Grupo VIP no WhatsApp",
-      description: "Networking exclusivo, atualizações em tempo real e suporte da comunidade de elite.",
+      title: "BÔNUS 2: A COMUNIDADE ANTI-SOLIDÃO",
+      description: "A jornada do empreendedor é solitária, mas não precisa ser. Você terá acesso direto a mim e a um círculo fechado de pessoas que estão no mesmo campo de batalha, aplicando o mesmo método. É o seu atalho para parcerias, insights e motivação diária.",
       price: "997,00",
       imageUrl: "/images/bonus/bonus2.jpg",
       highlight: true
     },
     {
       id: 3,
-      title: "Checklist de Otimização Técnica",
-      description: "Passo a passo completo e atualizado constantemente, usado pelas principais agências.",
+      title: "BÔNUS 3: O MAPA ANTI-PARALISIA",
+      description: "A 'paralisia técnica' é o que impede 90% das pessoas de começar. Com este checklist, isso é impossível. É um mapa 'à prova de idiotas' que te guia em cada etapa da configuração, garantindo que seu site seja tecnicamente perfeito, mesmo que você não entenda nada de código.",
       price: "497,00",
       imageUrl: "/images/bonus/bonus3.jpg",
       highlight: false
     },
     {
       id: 4,
-      title: "Plugin Exclusivo para Keywords",
-      description: "Ferramenta proprietária com análise avançada e atualizações inclusas por um ano completo.",
+      title: "BÔNUS 4: A VANTAGEM INJUSTA",
+      description: "Enquanto seus concorrentes usam as mesmas ferramentas públicas e encontram as mesmas keywords, você terá acesso ao meu plugin privado. É a sua 'arma secreta' para encontrar oportunidades de palavras-chave que ninguém mais está vendo.",
       price: "797,00",
       imageUrl: "/images/bonus/bonus4.jpg",
       highlight: false
     },
     {
       id: 5,
-      title: "Módulo de SEO Internacional",
-      description: "Estratégias multi-idioma, técnicas de geolocalização e templates multilíngues.",
+      title: "BÔNUS 5: O PASSAPORTE GLOBAL",
+      description: "Por que se contentar com o mercado brasileiro quando você pode dominar o mundo? Este módulo te entrega o sistema para replicar seu sucesso em mercados internacionais e multiplicar sua renda em dólar ou euro.",
       price: "2.497,00",
       imageUrl: "/images/bonus/bonus5.jpg",
       highlight: true
     },
     {
       id: 6,
-      title: "Pack de Otimização Local",
-      description: "Dominação do Google Maps, estratégia multi-localidade e templates de citations.",
+      title: "BÔNUS 6: O REI DO BAIRRO",
+      description: "O sistema 'copia e cola' para dominar as buscas locais. Ideal para quem quer prestar serviço para negócios físicos ou criar portais de nicho locais. É a forma mais rápida de gerar sua primeira receita com SEO.",
       price: "1.497,00",
       imageUrl: "/images/bonus/bonus6.jpg",
       highlight: false
     },
     {
       id: 7,
-      title: "Pack de Migração de Sites",
-      description: "Checklist completo, preservação de rankings e redirecionamentos seguros.",
+      title: "BÔNUS 7: O SEGURO CONTRA DESASTRES",
+      description: "O medo de 'quebrar o site' ou perder todo o seu trabalho ao mudar de plataforma acaba aqui. Este é o guia definitivo para fazer migrações de forma segura, sem perder um pingo de tráfego ou autoridade.",
       price: "1.997,00",
       imageUrl: "/images/bonus/bonus7.jpg",
       highlight: true
     },
     {
       id: 8,
-      title: "Biblioteca de Cases Resolvidos",
-      description: "10 estudos de caso detalhados com análises completas de casos reais e resultados comprovados.",
+      title: "BÔNUS 8: ENGENHARIA REVERSA DO SUCESSO",
+      description: "Eu não vou apenas te ensinar a teoria. Eu vou abrir a caixa-preta de projetos reais, mostrando o que funcionou, o que falhou e por quê. É o seu atalho para aprender com os erros e acertos dos outros, sem arriscar seu próprio dinheiro.",
       price: "1.997,00",
       imageUrl: "/images/bonus/bonus8.jpg",
       highlight: false
     },
     {
       id: 9,
-      title: "Acesso ao Meu Setup Completo",
-      description: "Todas as ferramentas que uso, configurações e processos internos revelados.",
+      title: "BÔNUS 9: A CHAVE DA MINHA SALA DE CONTROLE",
+      description: "Chega de gastar dinheiro com ferramentas inúteis. Vou te dar acesso completo ao meu setup: as exatas ferramentas, plugins e configurações que eu uso para gerenciar um portfólio de sites lucrativos. É o seu kit de ferramentas validado no campo de batalha.",
       price: "1.997,00",
       imageUrl: "/images/bonus/bonus9.jpg",
       highlight: true
@@ -387,6 +387,8 @@ export default function Home() {
         ]}
       />
 
+      <AboutSection />
+
       <SegmentationSection2 />
 
       <NotForSection2 />
@@ -395,19 +397,19 @@ export default function Home() {
 
       <PresentationSectionCourse
         id="modulos"
-        title="Conteúdo do Curso"
-        subtitle="Aprenda do básico ao avançado em 6 módulos práticos"
+        title="O Arsenal do Movimento: Seu Plano de Batalha Módulo a Módulo"
+        subtitle="O Sistema 'Copia e Cola' de 7 Fases Para Construir Sua Máquina de Renda Passiva"
         content={courseModules.content}
         features={courseModules.features}
         backgroundColor="bg-gray-50"
       />
 
-      <AboutSection />
+      
 
       <BonusSection
         id="bonus"
-        title="Bônus Explosivos"
-        subtitle="Mais de R$ 13.276,00 em bônus para acelerar seu sucesso"
+        title="Meu Kit Anti-Fracasso: Os Bônus Que Tornam Impossível Você Não Ter Resultado"
+        subtitle="Você não vai pagar por isso. É o meu investimento pessoal no seu sucesso."
         backgroundColor="bg-white"
         bonuses={bonusesData}
       />
@@ -418,7 +420,7 @@ export default function Home() {
         subtitle="Sua satisfação é nossa prioridade absoluta"
         backgroundColor="bg-gray-50"
         days={7}
-        description="Se por qualquer motivo você não ficar 100% satisfeito com o LPgen, basta nos avisar em até 7 dias e devolveremos todo seu investimento. Sem questionamentos, sem burocracia. Você não tem nada a perder e tudo a ganhar."
+        description="Minha promessa é simples: se ao final de 7 dias você não estiver 100% convencido de que este é o caminho mais rápido e seguro para construir sua renda passiva, eu não quero seu dinheiro. Mais do que isso, eu insisto que você peça o reembolso. Eu só quero no meu movimento pessoas que estão tendo resultados. O risco é todo meu."
       />
 
       <PriceAnchorSection
@@ -426,35 +428,35 @@ export default function Home() {
         title="Qual o Valor do Investimento?"
         subtitle="Veja o valor real de tudo que você vai receber"
         backgroundColor="bg-white"
-        items={[
+        items={[ 
           {
-            title: "Sistema Completo",
-            description: "Acesso ilimitado por 12 meses à plataforma completa com todas as funcionalidades",
-            value: "2.997,00",
+            title: "O Arsenal do Movimento (7 Módulos)",
+            description: "O sistema completo para dominar as primeiras posições do Google e construir um império digital lucrativo.",
+            value: "1.997,00",
             icon: "/images/pricing/pricing1.jpg"
           },
           {
-            title: "Curso Avançado",
-            description: "10 módulos práticos com mais de 50 horas de conteúdo atualizado",
+            title: "O Acompanhamento Anti-Trava (Aulas Semanais)",
+            description: "Aulas semanais ao vivo para resolver seus problemas e garantir seu resultado.",
             value: "1.997,00",
             icon: "/images/pricing/pricing2.jpg"
+          },
+          {
+            title: "A Comunidade Anti-Solidão (Grupo VIP)",
+            description: "Networking exclusivo e suporte da comunidade de elite.",
+            value: "997,00",
+            icon: "/images/pricing/pricing3.jpg"
+          },
+          {
+            title: "O Kit Anti-Fracasso (Todos os 9 Bônus)",
+            description: "Todos os bônus exclusivos restantes para tornar impossível você não ter resultado.",
+            value: "13.276,00",
+            icon: "/images/pricing/pricing4.jpg"
           },
           {
             title: "Suporte Premium",
             description: "Atendimento prioritário por 12 meses para tirar todas suas dúvidas",
             value: "1.497,00",
-            icon: "/images/pricing/pricing3.jpg"
-          },
-          {
-            title: "Comunidade VIP",
-            description: "Acesso ao grupo exclusivo com outros profissionais e mentoria em grupo",
-            value: "997,00",
-            icon: "/images/pricing/pricing4.jpg"
-          },
-          {
-            title: "Pack de Bônus",
-            description: "Todos os 9 bônus exclusivos listados acima",
-            value: "13.276,00",
             icon: "/images/pricing/pricing5.jpg"
           }
         ]}
@@ -478,7 +480,7 @@ export default function Home() {
         id="final-cta"
         mainHeadline="Comece Seu Blog de Sucesso Hoje Mesmo"
         subHeadline="Aproveite o poder da IA para criar conteúdo que gera resultados"
-        timerText="Condição Especial - 12x R$ 103,11"
+        timerText="O PREÇO SOBE EM BREVE. ESTA É SUA ÚLTIMA CHANCE."
         ctaText="QUERO COMEÇAR AGORA →"
         ctaUrl="https://pay.kiwify.com.br/A4sH4Lp"
         urgencyText="Acesso imediato após a confirmação do pagamento"

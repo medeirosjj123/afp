@@ -9,7 +9,7 @@
  */
 
 import { LazyMotion, domAnimation, m } from 'framer-motion';
-import Section from '../Section';
+import Section from '../common/Section';
 import Image from 'next/image';
 
 interface ValueItem {
