@@ -15,6 +15,7 @@ interface SectionProps {
   subtitle?: string;
   backgroundColor?: string;
   textColor?: string;
+  className?: string;
   children?: React.ReactNode;
 }
 
@@ -49,11 +50,12 @@ const Section = ({
   subtitle,
   backgroundColor = 'bg-white',
   textColor = 'text-gray-900',
+  className = '',
   children
 }: SectionProps) => {
   return (
     <LazyMotion features={domAnimation}>
-      <section id={id} className={`py-20 ${backgroundColor}`}>
+      <section id={id} className={`py-20 ${backgroundColor} ${className}`}>
         {(title || subtitle) && (
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
             {title && (
