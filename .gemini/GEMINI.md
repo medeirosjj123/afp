@@ -1,0 +1,1 @@
+Sempre que executar algum script ou acao, TESTE antes de me entregar. execute um teste e se o teste for bem sucedido vc da tarefa finalizada, caso contrario vc precisa resolver e me entregar pronto. 
