@@ -461,7 +461,7 @@ export default function Home() {
           }
         ]}
         totalValue="20.764,00"
-        realPrice="12x 166,42"
+        realPrice="12x 206,54"
         discount="95"
         savingsText="de desconto"
         ctaText="QUERO GARANTIR MINHA VAGA AGORA →"
