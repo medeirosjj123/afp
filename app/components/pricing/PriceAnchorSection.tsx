@@ -115,14 +115,14 @@ const PriceAnchorSection = ({
                       {realPrice.includes('x') ? (
                         <>
                           <span className="text-4xl">12x </span>
-                          R$ 103,11
+                          R$ 166,42
                         </>
                       ) : (
                         `R$ ${realPrice}`
                       )}
                     </p>
                     <p className="text-lg text-gray-600 mt-3">
-                      ou R$ 997,00 à vista
+                      ou R$ 1.997,00 à vista
                     </p>
                   </div>
                   <div className="bg-primary text-white px-6 py-3 rounded-full text-lg font-semibold">

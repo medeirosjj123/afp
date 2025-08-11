@@ -348,7 +348,7 @@ export default function Home() {
         headline="Como Viver de Renda Passiva Com Blogs Gerados Por Inteligência Artificial Sem Conhecimento Técnico"
         description="Descubra o método passo a passo para criar blogs lucrativos usando IA e conquistar sua liberdade financeira em 90 dias"
         ctaText="QUERO COMEÇAR MEU BLOG LUCRATIVO"
-        ctaUrl="#cadastro"
+        ctaUrl="#valor"
         backgroundColor="bg-gradient-to-b from-gray-900 to-black"
         textColor="text-white"
         imageUrl="/images/hero/hero1.jpg"
@@ -461,11 +461,11 @@ export default function Home() {
           }
         ]}
         totalValue="20.764,00"
-        realPrice="12x 103,11"
+        realPrice="12x 166,42"
         discount="95"
         savingsText="de desconto"
         ctaText="QUERO GARANTIR MINHA VAGA AGORA →"
-        ctaUrl="https://pay.kiwify.com.br/A4sH4Lp"
+        ctaUrl="https://pay.kiwify.com.br/F2uy7zX"
       />
 
       <FaqSection
@@ -482,7 +482,7 @@ export default function Home() {
         subHeadline="Aproveite o poder da IA para criar conteúdo que gera resultados"
         timerText="O PREÇO SOBE EM BREVE. ESTA É SUA ÚLTIMA CHANCE."
         ctaText="QUERO COMEÇAR AGORA →"
-        ctaUrl="https://pay.kiwify.com.br/A4sH4Lp"
+        ctaUrl="https://pay.kiwify.com.br/F2uy7zX"
         urgencyText="Acesso imediato após a confirmação do pagamento"
         features={[
           '✓ Acesso ilimitado por 12 meses à plataforma',

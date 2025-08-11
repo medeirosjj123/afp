@@ -155,7 +155,7 @@ export default function BonusSection({
           transition={{ delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <Link href="https://pay.kiwify.com.br/A4sH4Lp" className="inline-block">
+          <Link href="https://pay.kiwify.com.br/F2uy7zX" className="inline-block">
             <motion.div 
               animate={pulseAnimation}
               className="px-12 py-8 rounded-2xl bg-green-600 shadow-lg ring-2 ring-green-700 transition-all duration-300 hover:shadow-xl hover:bg-green-500"
