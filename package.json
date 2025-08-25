@@ -1,0 +1,33 @@
+{
+  "name": "skywavenext",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx}'"
+  },
+  "dependencies": {
+    "@iconify/react": "^5.0.2",
+    "bootstrap": "^5.3.3",
+    "clsx": "^2.1.1",
+    "gumshoejs": "^5.1.2",
+    "next": "15.0.1",
+    "prettier": "^3.3.3",
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "sass": "^1.80.4",
+    "swiper": "^11.1.14"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.1"
+  }
+}
