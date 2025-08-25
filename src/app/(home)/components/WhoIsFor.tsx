@@ -104,7 +104,7 @@ const WhoIsFor = () => {
                   <div className="d-flex align-items-start gap-3 mb-3">
                     <IconifyIcon icon="tabler:x" className="text-danger fs-5 mt-1 flex-shrink-0" />
                     <p className="mb-0">
-                      <strong>Pessoas que buscam esquemas</strong> de "ficar rico rápido" sem fazer nada
+                      <strong>Pessoas que buscam esquemas</strong> de &ldquo;ficar rico rápido&rdquo; sem fazer nada
                     </p>
                   </div>
 

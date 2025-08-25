@@ -12,7 +12,7 @@ const Problem = () => {
               Por Que <span className="text-danger">CURSOS TRADICIONAIS</span> Não Funcionam?
             </h2>
             <p className="fs-5 text-light mb-5">
-              A maioria dos "gurus" vende PDF por R$ 2.000 e te deixa na mão. Vou mostrar 
+              A maioria dos &ldquo;gurus&rdquo; vende PDF por R$ 2.000 e te deixa na mão. Vou mostrar 
               por que essa abordagem falha e como nossa <strong className="text-primary">PLATAFORMA</strong> resolve tudo:
             </p>
           </Col>
@@ -25,7 +25,7 @@ const Problem = () => {
                 <IconifyIcon icon="tabler:x" className="fs-1 text-danger bg-white rounded-circle p-3" />
               </div>
               <h4 className="text-danger fw-bold mb-3">PROBLEMA #1</h4>
-              <h5 className="text-white mb-3">Te Dão PDF e Dizem "Se Vira"</h5>
+              <h5 className="text-white mb-3">Te Dão PDF e Dizem &ldquo;Se Vira&rdquo;</h5>
               <p className="text-light">
                 Cursos tradicionais te ensinam teoria mas <strong className="text-danger">não dão as ferramentas</strong>. 
                 Você precisa encontrar hospedagem, instalar WordPress, configurar plugins...

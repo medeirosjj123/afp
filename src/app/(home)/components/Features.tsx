@@ -37,7 +37,7 @@ const Features = () => {
                 <span className="badge bg-primary text-white py-2 px-3 f-14">🔓 SEGREDO #1</span>
               </p>
               <h3 className="text-primary fw-bold">A Plataforma Que Faz Tudo em 1 Clique</h3>
-              <h4 className="text-dark mb-4">"Como Nossa Tecnologia Elimina TODA a Complexidade"</h4>
+              <h4 className="text-dark mb-4">&ldquo;Como Nossa Tecnologia Elimina TODA a Complexidade&rdquo;</h4>
               <p className="text-muted fs-5">
                 Enquanto outros cursos te ensinam teoria, nossa <strong>PLATAFORMA</strong> já vem com tudo pronto!
                 Veja as 4 tecnologias que fazem todo o trabalho por você:

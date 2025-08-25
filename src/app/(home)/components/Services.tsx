@@ -18,7 +18,7 @@ const Services = () => {
                 <span className="badge bg-primary text-white py-2 px-3 f-14">🔓 SEGREDO #3</span>
               </p>
               <h3 className="text-primary fw-bold">O Sistema Que Funciona Automaticamente</h3>
-              <h4 className="text-dark mb-4">"Nossa Plataforma + Treinamento = Sucesso Garantido"</h4>
+              <h4 className="text-dark mb-4">&ldquo;Nossa Plataforma + Treinamento = Sucesso Garantido&rdquo;</h4>
               <p className="mb-0 text-muted fs-5">
                 Com nossa <strong className="text-primary">PLATAFORMA PRONTA</strong> + treinamento completo, você tem tudo que precisa para ter sucesso.
                 Veja como é simples usar nosso sistema:

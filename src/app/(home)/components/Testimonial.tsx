@@ -40,7 +40,7 @@ const Testimonial = () => {
                 <span className="badge bg-primary text-white py-2 px-3 f-14">🔓 SEGREDO #2</span>
               </p>
               <h3 className="text-primary fw-bold">IA Cria Conteúdo SEO Perfeito em 1 Clique</h3>
-              <h4 className="text-dark mb-4">"Como Nossa IA Escreve Artigos de 2.000+ Palavras Otimizados para o Google"</h4>
+              <h4 className="text-dark mb-4">&ldquo;Como Nossa IA Escreve Artigos de 2.000+ Palavras Otimizados para o Google&rdquo;</h4>
               <p className="text-muted fs-5">
                 Enquanto outros gastam HORAS escrevendo um artigo, nossa <strong className="text-primary">IA ESPECIALIZADA</strong> faz tudo automaticamente. 
                 <strong className="text-success">Veja a facilidade da criação de conteúdo:</strong>
