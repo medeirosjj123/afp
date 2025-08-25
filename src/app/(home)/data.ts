@@ -20,7 +20,7 @@ export type TestimonialType = {
   name: string
   description: string
   role: string
-  star: number
+  star: string
 }
 
 export const featuresData: FeaturesType[] = [
