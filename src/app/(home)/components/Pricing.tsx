@@ -1,15 +1,6 @@
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
-import Image from 'next/image'
 import React from 'react'
-import avatar7 from '@/assets/images/team/avatar-7.jpg'
-import avatar6 from '@/assets/images/team/avatar-6.jpg'
-import avatar8 from '@/assets/images/team/avatar-8.jpg'
-import avatar9 from '@/assets/images/team/avatar-9.jpg'
-import avatar4 from '@/assets/images/team/avatar-4.jpg'
-import avatar2 from '@/assets/images/team/avatar-2.jpg'
-import avatar5 from '@/assets/images/team/avatar-5.jpg'
-import { Button, Card, CardBody, CardFooter, Col, Container, Row } from 'react-bootstrap'
-import { currency } from '@/context/constants'
+import { Button, Card, CardBody, Col, Container, Row } from 'react-bootstrap'
 
 const Pricing = () => {
   return (
@@ -75,7 +66,7 @@ const Pricing = () => {
                   variant="primary" 
                   size="lg" 
                   className="w-100 py-4 fw-bold fs-4 mb-3"
-                  href="https://pay.kiwify.com.br/F2uy7zX"
+                  href="https://pay.kiwify.com.br/vivKkdG"
                   target="_blank"
                   rel="noopener noreferrer"
                   as="a"
