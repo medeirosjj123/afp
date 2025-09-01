@@ -9,11 +9,11 @@ const Problem = () => {
         <Row className="justify-content-center text-center">
           <Col lg={10}>
             <h2 className="text-white fw-bold mb-4">
-              Por Que <span className="text-danger">CURSOS TRADICIONAIS</span> Não Funcionam?
+              Em 2025, <span className="text-danger">Criar Blog Manualmente</span> É Suicídio Financeiro!
             </h2>
             <p className="fs-5 text-light mb-5">
-              A maioria dos &ldquo;gurus&rdquo; vende PDF por R$ 2.000 e te deixa na mão. Vou mostrar 
-              por que essa abordagem falha e como nossa <strong className="text-primary">PLATAFORMA</strong> resolve tudo:
+              Enquanto você perde tempo escrevendo 1 artigo por semana, seus concorrentes usam IA para criar 
+              <strong className="text-primary"> 100 artigos por dia</strong>. Veja por que você está perdendo a guerra:
             </p>
           </Col>
         </Row>
@@ -25,11 +25,11 @@ const Problem = () => {
                 <IconifyIcon icon="tabler:x" className="fs-1 text-danger bg-white rounded-circle p-3" />
               </div>
               <h4 className="text-danger fw-bold mb-3">PROBLEMA #1</h4>
-              <h5 className="text-white mb-3">Te Dão PDF e Dizem &ldquo;Se Vira&rdquo;</h5>
+              <h5 className="text-white mb-3">Você Leva 5 Horas Para Escrever 1 Artigo</h5>
               <p className="text-light">
-                Cursos tradicionais te ensinam teoria mas <strong className="text-danger">não dão as ferramentas</strong>. 
-                Você precisa encontrar hospedagem, instalar WordPress, configurar plugins...
-                <strong className="text-primary"> NOSSA PLATAFORMA FAZ TUDO EM 1 CLIQUE!</strong>
+                Enquanto você batalha para escrever 1 artigo por semana, <strong className="text-danger">seus concorrentes criam 100 por dia</strong> 
+                com IA. Até você terminar 1 post, eles já dominaram o nicho inteiro.
+                <strong className="text-primary"> BLOG HOUSE CRIA 100+ EM 10 MINUTOS!</strong>
               </p>
             </div>
           </Col>
@@ -40,11 +40,11 @@ const Problem = () => {
                 <IconifyIcon icon="tabler:x" className="fs-1 text-danger bg-white rounded-circle p-3" />
               </div>
               <h4 className="text-danger fw-bold mb-3">PROBLEMA #2</h4>
-              <h5 className="text-white mb-3">Você Fica Perdido e Desiste</h5>
+              <h5 className="text-white mb-3">Seus Artigos Não Rankeiam no Google</h5>
               <p className="text-light">
-                Sem plataforma pronta, você gasta <strong className="text-danger">semanas configurando</strong> ao invés de focando nos resultados. 
-                90% desiste antes mesmo de publicar o primeiro artigo.
-                <strong className="text-primary"> NOSSA IA ESCREVE TUDO PARA VOCÊ!</strong>
+                Você escreve sem otimização SEO, sem pesquisa de palavras-chave, sem estrutura. 
+                <strong className="text-danger">Google ignora completamente</strong> seus artigos mal otimizados.
+                <strong className="text-primary"> BLOG HOUSE IA É EXPERT EM SEO!</strong>
               </p>
             </div>
           </Col>
@@ -55,24 +55,38 @@ const Problem = () => {
                 <IconifyIcon icon="tabler:x" className="fs-1 text-danger bg-white rounded-circle p-3" />
               </div>
               <h4 className="text-danger fw-bold mb-3">PROBLEMA #3</h4>
-              <h5 className="text-white mb-3">Zero Suporte Quando Trava</h5>
+              <h5 className="text-white mb-3">Custos Explodem e Você Não Fatura</h5>
               <p className="text-light">
-                Quando você trava (e vai travar!), não tem ninguém para ajudar. Fóruns vazios, suporte inexistente.
-                <strong className="text-danger">Você fica na mão!</strong>
-                <strong className="text-primary"> NOSSA COMUNIDADE TE APOIA 24/7!</strong>
+                Redator: R$ 100/artigo. Desenvolvedor: R$ 5.000. Ferramentas: R$ 500/mês. 
+                <strong className="text-danger">Gasta R$ 10.000+ e não vende nada!</strong>
+                <strong className="text-primary"> BLOG HOUSE: R$ 97/MÊS FAZ TUDO!</strong>
               </p>
             </div>
           </Col>
         </Row>
         
         <Row className="justify-content-center mt-5">
-          <Col lg={8} className="text-center">
+          <Col lg={10} className="text-center">
             <div className="bg-primary p-4 rounded">
-              <h4 className="text-white fw-bold mb-3">A SOLUÇÃO que Ninguém Te Oferece:</h4>
-              <p className="text-white fs-5 mb-0">
-                Uma <strong>PLATAFORMA COMPLETA</strong> que faz tudo por você + treinamento + comunidade + suporte.
-                Não é curso, é uma máquina de fazer dinheiro pronta para usar!
+              <h4 className="text-white fw-bold mb-3">🚀 BLOG HOUSE: A Arma Secreta dos Blogueiros de Sucesso em 2025</h4>
+              <p className="text-white fs-5 mb-3">
+                Enquanto outros lutam com WordPress, você cria <strong>100 blogs profissionais em 1 dia</strong>.
+                Não é curso, não é template - é uma <strong>MÁQUINA DE GUERRA</strong> contra a concorrência!
               </p>
+              <div className="row text-center mt-4">
+                <div className="col-4">
+                  <h5 className="text-white fw-bold mb-1">⚡ 60 SEGUNDOS</h5>
+                  <small className="text-light">Blog pronto e online</small>
+                </div>
+                <div className="col-4">
+                  <h5 className="text-white fw-bold mb-1">🤖 IA EXPERT</h5>
+                  <small className="text-light">SEO que realmente funciona</small>
+                </div>
+                <div className="col-4">
+                  <h5 className="text-white fw-bold mb-1">💰 R$ 97/MÊS</h5>
+                  <small className="text-light">vs R$ 10.000+ fazer manual</small>
+                </div>
+              </div>
             </div>
           </Col>
         </Row>

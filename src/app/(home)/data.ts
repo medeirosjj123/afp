@@ -25,24 +25,24 @@ export type TestimonialType = {
 
 export const featuresData: FeaturesType[] = [
   {
-    icon: 'tabler:click',
-    title: '⚡ WordPress 1-Clique',
-    description: 'Instala WordPress completo em qualquer hospedagem em 60 segundos. Zero configuração manual, zero dor de cabeça!',
+    icon: 'tabler:rocket',
+    title: '🚀 Blog Builder Engine',
+    description: 'Cria blog completo em 60 segundos: design, páginas, estrutura SEO - tudo automatizado. Disponível em TODOS os planos!',
   },
   {
-    icon: 'tabler:robot',
-    title: '🤖 IA Escritora Integrada',
-    description: 'Escreve artigos de 2.000+ palavras perfeitos para SEO. Só escolher o tema e clicar - artigo pronto em 2 minutos!',
+    icon: 'tabler:brain',
+    title: '🧠 IA Content Creator',
+    description: 'Escreve artigos otimizados que rankeiam no Google. Starter: 40/mês, Pro: 100/mês, Black Belt: ILIMITADO!',
   },
   {
-    icon: 'tabler:palette',
-    title: '🎨 Templates Profissionais',
-    description: 'Biblioteca com 100+ templates prontos que convertem. Designs testados que transformam visitas em vendas!',
+    icon: 'tabler:search',
+    title: '🔍 SEO Auto-Optimizer',
+    description: 'Pesquisa palavras-chave, otimiza títulos, meta descriptions e estrutura. IA especialista em rankeamento!',
   },
   {
-    icon: 'tabler:trending-up',
-    title: '📊 Monetização Automática',
-    description: 'Sistema identifica e configura as melhores formas de monetizar automaticamente. Ganhos desde o primeiro dia!',
+    icon: 'tabler:bolt',
+    title: '⚡ Bulk Mode (Black Belt)',
+    description: 'EXCLUSIVO: Cria 100+ artigos de uma vez! Domine nichos inteiros em minutos ao invés de meses.',
   },
 ]
 
