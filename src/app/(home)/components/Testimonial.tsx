@@ -1,52 +1,6 @@
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
-import Image from 'next/image'
 import React from 'react'
-import { testimonialData, TestimonialType } from '../data'
-import { Card, CardBody, Col, Container, Row } from 'react-bootstrap'
-import Link from 'next/link'
-
-const TestimonialCard = ({ description, image, name, role, star }: TestimonialType) => {
-  return (
-    <div 
-      className="p-4 rounded-4 h-100"
-      style={{
-        background: 'rgba(255, 255, 255, 0.05)',
-        backdropFilter: 'blur(10px)',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
-      }}
-    >
-      <div className="d-flex align-items-start gap-3">
-        <div 
-          className="rounded-circle overflow-hidden flex-shrink-0"
-          style={{
-            width: '60px',
-            height: '60px',
-            border: '2px solid rgba(16, 185, 129, 0.3)'
-          }}
-        >
-          <Image src={image} alt="avatar" className="w-100 h-100 object-fit-cover" width={60} height={60} />
-        </div>
-        <div className="flex-grow-1">
-          <div className="d-flex align-items-center gap-2 mb-2">
-            <h6 className="text-white fw-bold m-0 small">{name}</h6>
-            <span 
-              className="badge rounded-pill px-2 py-1"
-              style={{
-                background: 'linear-gradient(135deg, #10b981, #059669)',
-                color: 'white',
-                fontSize: '11px'
-              }}
-            >
-              {star}
-            </span>
-          </div>
-          <p className="text-white-50 small mb-2">{role}</p>
-          <p className="mb-0 text-white-50 small">{description}</p>
-        </div>
-      </div>
-    </div>
-  )
-}
+import { Col, Container, Row } from 'react-bootstrap'
 
 const Testimonial = () => {
   return (
@@ -265,11 +219,10 @@ const Testimonial = () => {
                         src="https://player.vimeo.com/video/1114994833?h=0da962d18b&title=0&byline=0&portrait=0" 
                         width="100%" 
                         height="100%" 
-                        frameBorder="0" 
+                        style={{border: 0, filter: 'brightness(0.9)'}} 
                         allow="autoplay; fullscreen; picture-in-picture" 
                         allowFullScreen
                         className="rounded-3"
-                        style={{filter: 'brightness(0.9)'}}
                       ></iframe>
                     </div>
                   </div>

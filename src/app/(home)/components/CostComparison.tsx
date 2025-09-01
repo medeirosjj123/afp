@@ -1,6 +1,6 @@
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import React from 'react'
-import { Card, CardBody, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 const CostComparison = () => {
   return (

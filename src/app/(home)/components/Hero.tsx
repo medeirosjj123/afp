@@ -1,10 +1,5 @@
 'use client'
-import Image from 'next/image'
 import React from 'react'
-import google from '@/assets/images/google.png'
-import linkedin from '@/assets/images/linkedin.png'
-import hero1 from '@/assets/images/hero1.webp'
-import userImg from '@/assets/images/user-msg.png'
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 
@@ -208,7 +203,7 @@ const Hero = () => {
                            background: 'linear-gradient(135deg, #667eea, #764ba2)'
                          }}></div>
                   </div>
-                  <small className="text-white-50">"Melhores Ferramentas de IA para Marketing 2025" • 2.1K palavras</small>
+                  <small className="text-white-50">&ldquo;Melhores Ferramentas de IA para Marketing 2025&rdquo; • 2.1K palavras</small>
                 </div>
               </div>
             </div>

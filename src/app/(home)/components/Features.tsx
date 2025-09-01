@@ -1,10 +1,8 @@
 'use client'
-import Image from 'next/image'
 import React from 'react'
-import features from '@/assets/images/features-1.png'
 import { featuresData, FeaturesType } from '../data'
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
-import { Button, Card, CardBody, Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 
 const FeaturesCard = ({ description, icon, title }: FeaturesType) => {
   return (
@@ -117,11 +115,10 @@ const Features = () => {
                         src="https://player.vimeo.com/video/1114994833?h=0da962d18b&title=0&byline=0&portrait=0" 
                         width="100%" 
                         height="100%" 
-                        frameBorder="0" 
+                        style={{border: 0, filter: 'brightness(0.9)'}} 
                         allow="autoplay; fullscreen; picture-in-picture" 
                         allowFullScreen
                         className="rounded-3"
-                        style={{filter: 'brightness(0.9)'}}
                       ></iframe>
                     </div>
                   </div>
