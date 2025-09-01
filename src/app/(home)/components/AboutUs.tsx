@@ -6,49 +6,191 @@ import { Col, Container, Row } from 'react-bootstrap'
 
 const AboutUs = () => {
   return (
-    <section className="section pb-lg-0" id="about">
+    <section className="py-5" id="about" style={{background: '#0a0a0a'}}>
       <Container>
-        <Row className="align-items-center">
-          <Col lg={6}>
-            <div className="img-part">
-              <Image src={brunoImage} alt="Bruno Medeiros - Expert em SEO" className="img-fluid rounded shadow-lg" />
+        {/* Section header */}
+        <Row className="justify-content-center text-center mb-5">
+          <Col lg={8}>
+            <div className="mb-3">
+              <span 
+                className="badge rounded-pill px-3 py-2"
+                style={{background: 'rgba(102, 126, 234, 0.2)', color: '#667eea'}}
+              >
+                👤 Minha história
+              </span>
+            </div>
+            <h2 className="text-white fw-bold mb-3" style={{fontSize: 'clamp(2rem, 5vw, 3rem)'}}>
+              Como trouxe a tecnologia de SEO da{' '}
+              <span style={{
+                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
+                Ásia para o Brasil
+              </span>
+            </h2>
+          </Col>
+        </Row>
+        
+        <Row className="align-items-center g-5">
+          <Col lg={5}>
+            <div 
+              className="position-relative rounded-4 overflow-hidden"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                padding: '8px'
+              }}
+            >
+              <Image src={brunoImage} alt="Bruno Medeiros - Expert em SEO" className="img-fluid rounded-3 w-100" />
             </div>
           </Col>
-          <Col lg={6}>
-            <p className="d-flex align-items-center mb-4">
-              <span className="icon bg-primary rounded d-flex justify-content-center align-items-center">
-                <IconifyIcon icon="tabler:info-circle" className="text-white f-18" />
-              </span>
-              <IconifyIcon icon="tabler:line-dashed" className="text-primary fs-5" />
-              <span className="badge bg-light border text-primary py-2 px-3 f-14">Minha História </span>
-            </p>
-            <h3 className="lh-base">Como Trouxe a Tecnologia de SEO da Ásia para o Brasil</h3>
-            <p className="text-muted mb-4">
-              <strong>Meu nome é Bruno Medeiros</strong> e há 15 anos trabalho com SEO. Há 8 anos moro na Tailândia - 
-              a capital mundial do SEO, onde os melhores especialistas do planeta se encontram.
-            </p>
-            <p className="text-muted mb-4">
-              Aqui descobri que enquanto brasileiros aprendem TEORIA em cursos, o mercado internacional usam PLATAFORMAS que fazem tudo 
-              automaticamente. Blogs criados em minutos, ranqueando em horas. O Brasil está 5 anos atrasado.
-            </p>
-            <p className="text-muted mb-4">
-              Passei 6 meses desenvolvendo a primeira plataforma brasileira com essa tecnologia. Cada linha de código tem 
-              <strong className="text-primary"> 15 anos de experiência internacional embutida!</strong>
-            </p>
-            <div className="bg-light border-start border-primary border-4 p-4 mb-4">
-              <p className="mb-3 fw-bold text-primary">Agora você tem acesso...</p>
-              <p className="text-muted mb-0">
-                Agora você também pode ter acesso às mesmas ferramentas que os TOP SEOs do mundo usam. 
-                Tecnologia que custaria US$ 50.000 lá fora, por preço que cabe no bolso do brasileiro!
+          <Col lg={7}>
+            {/* Story intro */}
+            <div 
+              className="p-4 rounded-4 mb-4"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              <p className="text-white-50 mb-0">
+                <strong className="text-white">Meu nome é Bruno Medeiros</strong> e há 15 anos trabalho com SEO. 
+                Há 8 anos moro na Tailândia - a capital mundial do SEO, onde os melhores especialistas do planeta se encontram.
               </p>
             </div>
-            <div className="user-detail border-start border-success mt-4 ps-4">
-              <p className="fs-6 text-success fw-bold mb-2">
-                🌏 Experiência Internacional:
-              </p>
-              <p className="fs-6 text-muted mb-1">✅ 15 anos de experiência em SEO mundial</p>
-              <p className="fs-6 text-muted mb-1">✅ 500+ sites ranqueados internacionalmente</p>
-              <p className="fs-6 text-muted mb-3">✅ Baseado na Tailândia há 8 anos</p>
+
+            {/* Timeline */}
+            <div className="timeline-container">
+              {/* Timeline item 1 */}
+              <div 
+                className="d-flex gap-3 mb-4"
+                style={{position: 'relative'}}
+              >
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style={{
+                    width: '40px',
+                    height: '40px',
+                    background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                    position: 'relative',
+                    zIndex: 2
+                  }}
+                >
+                  <IconifyIcon icon="tabler:world" className="text-white" />
+                </div>
+                <div 
+                  className="flex-grow-1 p-3 rounded-4"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)'
+                  }}
+                >
+                  <h6 className="text-white fw-semibold mb-2">Descoberta na Ásia</h6>
+                  <p className="text-white-50 mb-0 small">
+                    Descobri que enquanto brasileiros aprendem TEORIA, o mercado internacional usa PLATAFORMAS 
+                    que fazem tudo automaticamente. Blogs criados em minutos, ranqueando em horas.
+                  </p>
+                </div>
+              </div>
+
+              {/* Timeline item 2 */}
+              <div 
+                className="d-flex gap-3 mb-4"
+                style={{position: 'relative'}}
+              >
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style={{
+                    width: '40px',
+                    height: '40px',
+                    background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                    position: 'relative',
+                    zIndex: 2
+                  }}
+                >
+                  <IconifyIcon icon="tabler:code" className="text-white" />
+                </div>
+                <div 
+                  className="flex-grow-1 p-3 rounded-4"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)'
+                  }}
+                >
+                  <h6 className="text-white fw-semibold mb-2">6 meses de desenvolvimento</h6>
+                  <p className="text-white-50 mb-0 small">
+                    Passei 6 meses desenvolvendo a primeira plataforma brasileira com essa tecnologia. 
+                    Cada linha de código tem <strong className="text-white">15 anos de experiência internacional</strong> embutida!
+                  </p>
+                </div>
+              </div>
+
+              {/* Timeline item 3 */}
+              <div className="d-flex gap-3 mb-4">
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style={{
+                    width: '40px',
+                    height: '40px',
+                    background: 'linear-gradient(135deg, #10b981, #059669)',
+                    position: 'relative',
+                    zIndex: 2
+                  }}
+                >
+                  <IconifyIcon icon="tabler:rocket" className="text-white" />
+                </div>
+                <div 
+                  className="flex-grow-1 p-3 rounded-4"
+                  style={{
+                    background: 'rgba(16, 185, 129, 0.1)',
+                    backdropFilter: 'blur(10px)',
+                    border: '1px solid rgba(16, 185, 129, 0.3)'
+                  }}
+                >
+                  <h6 className="text-white fw-semibold mb-2">Blog House nasce</h6>
+                  <p className="text-white-50 mb-0 small">
+                    Agora você tem acesso às mesmas ferramentas que os TOP SEOs do mundo usam. 
+                    Tecnologia que custaria <strong className="text-white">US$ 50.000 lá fora</strong>, 
+                    por preço que cabe no bolso do brasileiro!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats */}
+            <div 
+              className="row g-3 mt-4"
+            >
+              <div className="col-6">
+                <div 
+                  className="text-center p-3 rounded-3"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)'
+                  }}
+                >
+                  <h4 className="text-white fw-bold mb-1">15 anos</h4>
+                  <small className="text-white-50">Experiência SEO</small>
+                </div>
+              </div>
+              <div className="col-6">
+                <div 
+                  className="text-center p-3 rounded-3"
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)'
+                  }}
+                >
+                  <h4 className="text-white fw-bold mb-1">500+</h4>
+                  <small className="text-white-50">Sites ranqueados</small>
+                </div>
+              </div>
             </div>
           </Col>
         </Row>

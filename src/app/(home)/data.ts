@@ -31,8 +31,8 @@ export const featuresData: FeaturesType[] = [
   },
   {
     icon: 'tabler:brain',
-    title: '🧠 IA Content Creator',
-    description: 'Escreve artigos otimizados que rankeiam no Google. Starter: 40/mês, Pro: 100/mês, Black Belt: ILIMITADO!',
+    title: '🧠 IA Review Creator',
+    description: 'IA especializada em reviews que convertem! Treinada com milhares de reviews de sucesso - cria prós, contras, comparações e CTAs automaticamente.',
   },
   {
     icon: 'tabler:search',
@@ -41,8 +41,8 @@ export const featuresData: FeaturesType[] = [
   },
   {
     icon: 'tabler:bolt',
-    title: '⚡ Bulk Mode (Black Belt)',
-    description: 'EXCLUSIVO: Cria 100+ artigos de uma vez! Domine nichos inteiros em minutos ao invés de meses.',
+    title: '⚡ Criação em Massa (Black Belt)',
+    description: 'EXCLUSIVO: Cria 100+ reviews de uma vez! Domine nichos inteiros com reviews otimizados em minutos ao invés de meses.',
   },
 ]
 

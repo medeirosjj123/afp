@@ -1,92 +1,133 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import features from '@/assets/images/features-1.png'
 import { featuresData, FeaturesType } from '../data'
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
-import { Card, CardBody, Col, Container, Row } from 'react-bootstrap'
-//:
+import { Button, Card, CardBody, Col, Container, Row } from 'react-bootstrap'
 
 const FeaturesCard = ({ description, icon, title }: FeaturesType) => {
   return (
-    <Card className="border-0">
-      <CardBody>
-        <div className="d-flex align-items-center gap-3 mb-3">
-          <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
-            <IconifyIcon icon={icon} className="fs-4" />
-          </span>
-          <p className="mb-0 fw-semibold f-18">{title}</p>
+    <div 
+      className="h-100 p-4 rounded-4 position-relative overflow-hidden"
+      style={{
+        background: 'rgba(255, 255, 255, 0.05)',
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+      }}
+    >
+      {/* Icon with gradient */}
+      <div className="mb-3">
+        <div 
+          className="rounded-3 d-flex align-items-center justify-content-center"
+          style={{
+            width: '48px',
+            height: '48px',
+            background: 'linear-gradient(135deg, #667eea, #764ba2)'
+          }}
+        >
+          <IconifyIcon icon={icon} className="text-white fs-4" />
         </div>
-        <p className="mb-0 text-muted">{description}</p>
-      </CardBody>
-    </Card>
+      </div>
+      
+      {/* Title */}
+      <h5 className="text-white fw-bold mb-2" style={{fontSize: '18px'}}>
+        {title.replace(/[🚀🧠🔍⚡]/g, '').trim()}
+      </h5>
+      
+      {/* Description */}
+      <p className="text-white-50 mb-0 small lh-sm">
+        {description}
+      </p>
+    </div>
   )
 }
 
 const Features = () => {
   return (
-    <section className="section bg-light" id="features">
+    <section className="py-5" id="features" style={{background: '#0a0a0a'}}>
       <Container>
-        <Row className="justify-content-center">
-          <Col lg={7}>
-            <div className="title text-center mb-5">
-              <p className="d-flex align-items-center justify-content-center mb-4">
-                <span className="icon bg-primary rounded d-flex justify-content-center align-items-center">
-                  <IconifyIcon icon="tabler:key" className="text-white f-18" />
-                </span>
-                <IconifyIcon icon="tabler:line-dashed" className="text-primary fs-5" />
-                <span className="badge bg-primary text-white py-2 px-3 f-14">🔓 SEGREDO #1</span>
-              </p>
-              <h3 className="text-primary fw-bold">Blog House Engine: A Máquina Que Cria Blogs Perfeitos</h3>
-              <h4 className="text-dark mb-4">&ldquo;Como Nossa IA Elimina Anos de Trabalho Manual&rdquo;</h4>
-              <p className="text-muted fs-5">
-                Não importa qual plano você escolha - <strong>TODOS</strong> têm acesso à nossa IA revolucionária.
-                Veja as 4 tecnologias exclusivas do Blog House 2025:
-              </p>
-            </div>
+        {/* Section header - minimal */}
+        <Row className="justify-content-center text-center mb-5">
+          <Col lg={8}>
+            <h2 className="text-white fw-bold mb-3" style={{fontSize: 'clamp(2rem, 5vw, 3rem)'}}>
+              Como funciona a plataforma
+            </h2>
+            <p className="text-white-50 fs-5 mb-0">
+              4 tecnologias que automatizam completamente a criação do seu blog
+            </p>
           </Col>
         </Row>
-        <Row className="mt-4">
-          <Col lg={6}>
-            <Row className="g-3">
-              {featuresData.map((item, idx) => {
-                return (
-                  <Col lg={6} key={idx}>
-                    <FeaturesCard {...item} />
-                  </Col>
-                )
-              })}
-            </Row>
-          </Col>
-          <Col lg={6}>
-            <Card className="border-0">
-              <CardBody>
-                <div className="d-flex gap-3 mb-3">
-                  <span className="icon-lg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
-                    <IconifyIcon icon="tabler:play" className="fs-2" />
-                  </span>
-                  <div>
-                    <p className="mb-1 fw-semibold f-18 text-primary">🎬 Veja a Plataforma Funcionando</p>
-                    <p className="mb-0 f-15 text-muted fw-bold">
-                      <span className="text-success">WordPress instalado em 60 segundos</span> - assista a demonstração real 
-                      da ferramenta de 1-clique em ação!
-                    </p>
+
+        {/* Features Grid - Raycast style */}
+        <Row className="g-4 mb-5">
+          {featuresData.map((item, idx) => (
+            <Col lg={3} md={6} key={idx}>
+              <FeaturesCard {...item} />
+            </Col>
+          ))}
+        </Row>
+
+        {/* Demo section - glassmorphic */}
+        <Row className="justify-content-center">
+          <Col lg={10}>
+            <div 
+              className="rounded-4 p-4 text-center"
+              style={{
+                background: 'rgba(255, 255, 255, 0.03)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              <div className="row align-items-center">
+                <div className="col-lg-6 text-lg-start">
+                  <div className="mb-3">
+                    <span 
+                      className="badge rounded-pill px-3 py-2"
+                      style={{background: 'rgba(102, 126, 234, 0.2)', color: '#667eea'}}
+                    >
+                      🎬 Demo da Plataforma
+                    </span>
+                  </div>
+                  <h4 className="text-white fw-bold mb-3">
+                    Veja o Blog House em ação
+                  </h4>
+                  <p className="text-white-50 mb-4">
+                    WordPress instalado e configurado automaticamente em 60 segundos. 
+                    Assista nossa ferramenta criando um blog completo do zero.
+                  </p>
+                  <Button
+                    variant="outline-light"
+                    className="rounded-3 px-4 py-2"
+                    style={{
+                      borderColor: 'rgba(255, 255, 255, 0.2)',
+                      color: 'rgba(255, 255, 255, 0.9)'
+                    }}
+                  >
+                    Assistir Demo
+                  </Button>
+                </div>
+                <div className="col-lg-6">
+                  <div 
+                    className="rounded-3 overflow-hidden position-relative"
+                    style={{background: 'rgba(255, 255, 255, 0.05)'}}
+                  >
+                    <div className="ratio ratio-16x9">
+                      <iframe 
+                        src="https://player.vimeo.com/video/1114994833?h=0da962d18b&title=0&byline=0&portrait=0" 
+                        width="100%" 
+                        height="100%" 
+                        frameBorder="0" 
+                        allow="autoplay; fullscreen; picture-in-picture" 
+                        allowFullScreen
+                        className="rounded-3"
+                        style={{filter: 'brightness(0.9)'}}
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
-                <div className="position-relative">
-                  <div className="ratio ratio-16x9">
-                    <iframe 
-                      src="https://player.vimeo.com/video/1113039081?h=5a7036d8c5&title=0&byline=0&portrait=0" 
-                      width="100%" 
-                      height="100%" 
-                      frameBorder="0" 
-                      allow="autoplay; fullscreen; picture-in-picture" 
-                      allowFullScreen
-                      className="rounded"
-                    ></iframe>
-                  </div>
-                </div>
-              </CardBody>
-            </Card>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>

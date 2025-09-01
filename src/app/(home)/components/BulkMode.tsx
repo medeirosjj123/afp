@@ -1,164 +1,300 @@
+'use client'
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import React from 'react'
 import { Button, Card, CardBody, Col, Container, Row } from 'react-bootstrap'
 
 const BulkMode = () => {
   return (
-    <section className="section bg-gradient text-white" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}} id="bulk-mode">
+    <section className="py-5" id="bulk-mode" style={{background: '#0a0a0a'}}>
       <Container>
-        <Row className="justify-content-center text-center">
-          <Col lg={10}>
-            <div className="mb-5">
-              <div className="bg-warning text-dark px-4 py-2 rounded-pill d-inline-block mb-4">
-                <h6 className="mb-0 fw-bold">🔥 EXCLUSIVO BLACK BELT</h6>
-              </div>
-              <h2 className="text-white fw-bold mb-4">
-                BULK MODE: Crie 100+ Artigos de Uma Vez!
-              </h2>
-              <p className="fs-5 text-light mb-4">
-                Enquanto outros levam <strong className="text-danger">6 meses</strong> para criar 100 artigos, 
-                você faz isso em <strong className="text-warning">10 minutos</strong> com o Bulk Mode exclusivo.
-              </p>
+        {/* Section header */}
+        <Row className="justify-content-center text-center mb-5">
+          <Col lg={8}>
+            <div className="mb-3">
+              <span 
+                className="badge rounded-pill px-3 py-2"
+                style={{background: 'rgba(251, 191, 36, 0.2)', color: '#f59e0b'}}
+              >
+                🔥 Exclusivo Black Belt
+              </span>
             </div>
+            <h2 className="text-white fw-bold mb-3" style={{fontSize: 'clamp(2rem, 5vw, 3rem)'}}>
+              Criação em Massa: Crie{' '}
+              <span style={{
+                background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
+                100+ reviews
+              </span>
+              {' '}de uma vez
+            </h2>
+            <p className="text-white-50 fs-5 mb-0">
+              Enquanto outros levam <strong className="text-white">6 meses</strong> para criar 100 reviews,<br />
+              você faz isso em <strong className="text-white">10 minutos</strong> com a Criação em Massa exclusiva
+            </p>
           </Col>
         </Row>
 
         <Row className="g-4 align-items-center">
           <Col lg={6}>
-            <Card className="border-0 bg-dark text-white">
-              <CardBody className="p-5">
-                <div className="mb-4">
-                  <IconifyIcon icon="tabler:bolt" className="fs-1 text-warning mb-3" />
-                  <h4 className="text-warning fw-bold mb-3">Como Funciona o Bulk Mode?</h4>
+            <div 
+              className="p-4 rounded-4"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              <div className="mb-4">
+                <div 
+                  className="rounded-3 d-flex align-items-center justify-content-center mb-3"
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    background: 'linear-gradient(135deg, #f59e0b, #d97706)'
+                  }}
+                >
+                  <IconifyIcon icon="tabler:bolt" className="text-white fs-4" />
+                </div>
+                <h4 className="text-white fw-bold mb-3">Como funciona a Criação em Massa?</h4>
+              </div>
+
+              <div className="steps">
+                <div className="d-flex align-items-start mb-3">
+                  <div 
+                    className="rounded-circle me-3 d-flex align-items-center justify-content-center text-dark fw-bold"
+                    style={{minWidth: '32px', height: '32px', background: '#f59e0b'}}
+                  >
+                    1
+                  </div>
+                  <div>
+                    <h6 className="text-white fw-bold mb-1 small">Escolha o nicho</h6>
+                    <p className="text-white-50 mb-0" style={{fontSize: '13px'}}>
+                      Fitness, tecnologia, receitas... qualquer nicho que quiser dominar
+                    </p>
+                  </div>
                 </div>
 
-                <div className="steps">
-                  <div className="d-flex align-items-start mb-4">
-                    <span className="badge bg-warning text-dark rounded-circle me-3 p-2" style={{minWidth: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                      <strong>1</strong>
-                    </span>
-                    <div>
-                      <h6 className="text-white fw-bold mb-2">Escolha o Nicho</h6>
-                      <p className="text-light mb-0">Fitness, tecnologia, receitas... qualquer nicho que quiser dominar</p>
-                    </div>
+                <div className="d-flex align-items-start mb-3">
+                  <div 
+                    className="rounded-circle me-3 d-flex align-items-center justify-content-center text-dark fw-bold"
+                    style={{minWidth: '32px', height: '32px', background: '#f59e0b'}}
+                  >
+                    2
                   </div>
-
-                  <div className="d-flex align-items-start mb-4">
-                    <span className="badge bg-warning text-dark rounded-circle me-3 p-2" style={{minWidth: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                      <strong>2</strong>
-                    </span>
-                    <div>
-                      <h6 className="text-white fw-bold mb-2">Configure Quantidade</h6>
-                      <p className="text-light mb-0">50, 100, 200... quantos artigos quiser criar de uma vez</p>
-                    </div>
-                  </div>
-
-                  <div className="d-flex align-items-start mb-4">
-                    <span className="badge bg-warning text-dark rounded-circle me-3 p-2" style={{minWidth: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                      <strong>3</strong>
-                    </span>
-                    <div>
-                      <h6 className="text-white fw-bold mb-2">Aperte 1 Botão</h6>
-                      <p className="text-light mb-0">Nossa IA cria todos os artigos otimizados automaticamente</p>
-                    </div>
-                  </div>
-
-                  <div className="d-flex align-items-start">
-                    <span className="badge bg-success text-white rounded-circle me-3 p-2" style={{minWidth: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                      <IconifyIcon icon="tabler:check" />
-                    </span>
-                    <div>
-                      <h6 className="text-success fw-bold mb-2">Pronto! 6 Meses de Conteúdo</h6>
-                      <p className="text-light mb-0">Você já tem material para o ano inteiro, otimizado e pronto para converter</p>
-                    </div>
+                  <div>
+                    <h6 className="text-white fw-bold mb-1 small">Configure quantidade</h6>
+                    <p className="text-white-50 mb-0" style={{fontSize: '13px'}}>
+                      50, 100, 200... quantos reviews quiser criar de uma vez
+                    </p>
                   </div>
                 </div>
-              </CardBody>
-            </Card>
+
+                <div className="d-flex align-items-start mb-3">
+                  <div 
+                    className="rounded-circle me-3 d-flex align-items-center justify-content-center text-dark fw-bold"
+                    style={{minWidth: '32px', height: '32px', background: '#f59e0b'}}
+                  >
+                    3
+                  </div>
+                  <div>
+                    <h6 className="text-white fw-bold mb-1 small">Aperte 1 botão</h6>
+                    <p className="text-white-50 mb-0" style={{fontSize: '13px'}}>
+                      Nossa IA cria todos os reviews otimizados automaticamente
+                    </p>
+                  </div>
+                </div>
+
+                <div className="d-flex align-items-start">
+                  <div 
+                    className="rounded-circle me-3 d-flex align-items-center justify-content-center"
+                    style={{minWidth: '32px', height: '32px', background: '#10b981'}}
+                  >
+                    <IconifyIcon icon="tabler:check" className="text-white" style={{fontSize: '14px'}} />
+                  </div>
+                  <div>
+                    <h6 className="text-white fw-bold mb-1 small">Pronto! 6 meses de reviews</h6>
+                    <p className="text-white-50 mb-0" style={{fontSize: '13px'}}>
+                      Você já tem reviews para o ano inteiro, otimizados e prontos para converter
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Col>
 
           <Col lg={6}>
-            <div className="comparison-box">
-              <h5 className="text-warning fw-bold mb-4 text-center">⏱️ COMPARAÇÃO DE TEMPO</h5>
+            <div>
+              <h5 className="text-white fw-bold mb-4 text-center">⏱️ Comparação de tempo</h5>
               
-              <div className="bg-danger bg-opacity-20 rounded p-4 mb-4">
+              {/* Manual Method */}
+              <div 
+                className="p-3 rounded-4 mb-4"
+                style={{
+                  background: 'rgba(239, 68, 68, 0.1)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(239, 68, 68, 0.3)'
+                }}
+              >
                 <div className="d-flex align-items-center mb-3">
-                  <IconifyIcon icon="tabler:user" className="fs-3 text-danger me-3" />
+                  <div 
+                    className="rounded-3 d-flex align-items-center justify-content-center me-3"
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      background: 'linear-gradient(135deg, #ef4444, #dc2626)'
+                    }}
+                  >
+                    <IconifyIcon icon="tabler:user" className="text-white fs-5" />
+                  </div>
                   <div>
-                    <h6 className="text-white fw-bold mb-1">Método Manual</h6>
-                    <p className="text-light small mb-0">Como 99% das pessoas fazem</p>
+                    <h6 className="text-white fw-bold mb-1 small">Método manual</h6>
+                    <p className="text-white-50 small mb-0" style={{fontSize: '12px'}}>Como 99% das pessoas fazem</p>
                   </div>
                 </div>
-                <div className="stats text-center">
-                  <h3 className="text-danger fw-bold mb-2">6 MESES</h3>
-                  <p className="text-light mb-0">Para criar 100 artigos de qualidade</p>
+                <div className="text-center">
+                  <h3 className="text-white fw-bold mb-1">6 meses</h3>
+                  <p className="text-white-50 small mb-0">Para criar 100 reviews de qualidade</p>
                 </div>
               </div>
 
-              <div className="text-center my-4">
-                <h4 className="text-warning fw-bold">VS</h4>
+              <div className="text-center my-3">
+                <span className="text-white fw-bold">VS</span>
               </div>
 
-              <div className="bg-success bg-opacity-20 rounded p-4">
+              {/* Bulk Mode */}
+              <div 
+                className="p-3 rounded-4 mb-4"
+                style={{
+                  background: 'rgba(16, 185, 129, 0.1)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(16, 185, 129, 0.3)'
+                }}
+              >
                 <div className="d-flex align-items-center mb-3">
-                  <IconifyIcon icon="tabler:robot" className="fs-3 text-success me-3" />
+                  <div 
+                    className="rounded-3 d-flex align-items-center justify-content-center me-3"
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      background: 'linear-gradient(135deg, #10b981, #059669)'
+                    }}
+                  >
+                    <IconifyIcon icon="tabler:robot" className="text-white fs-5" />
+                  </div>
                   <div>
-                    <h6 className="text-white fw-bold mb-1">Bulk Mode Blog House</h6>
-                    <p className="text-light small mb-0">Exclusivo Black Belt</p>
+                    <h6 className="text-white fw-bold mb-1 small">Criação em Massa Blog House</h6>
+                    <p className="text-white-50 small mb-0" style={{fontSize: '12px'}}>Exclusivo Black Belt</p>
                   </div>
                 </div>
-                <div className="stats text-center">
-                  <h3 className="text-success fw-bold mb-2">10 MINUTOS</h3>
-                  <p className="text-light mb-0">Para criar 100+ artigos otimizados</p>
+                <div className="text-center">
+                  <h3 className="text-white fw-bold mb-1">10 minutos</h3>
+                  <p className="text-white-50 small mb-0">Para criar 100+ reviews otimizados</p>
                 </div>
               </div>
 
-              <div className="mt-4 text-center">
-                <div className="bg-warning text-dark rounded p-3">
-                  <p className="fw-bold mb-0">💰 ECONOMIA: R$ 10.000+ em redatores!</p>
-                </div>
+              {/* Economy */}
+              <div 
+                className="text-center p-3 rounded-4"
+                style={{
+                  background: 'rgba(251, 191, 36, 0.1)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(251, 191, 36, 0.3)'
+                }}
+              >
+                <p className="text-white fw-bold mb-0 small">💰 Economia: R$ 10.000+ em redatores!</p>
               </div>
             </div>
           </Col>
         </Row>
 
+        {/* Success Cases */}
         <Row className="justify-content-center mt-5">
-          <Col lg={8} className="text-center">
-            <div className="bg-dark bg-opacity-50 rounded p-4">
-              <h5 className="text-warning fw-bold mb-3">🎯 CASOS REAIS DE SUCESSO</h5>
-              <div className="row">
-                <div className="col-md-4">
-                  <h6 className="text-white fw-bold">João - Fitness</h6>
-                  <p className="text-light small mb-2">500 artigos em 1 dia</p>
-                  <p className="text-success fw-bold">Dominou o nicho</p>
+          <Col lg={10}>
+            <div 
+              className="p-4 rounded-4"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              <h5 className="text-white fw-bold mb-4 text-center">🎯 Casos reais de sucesso</h5>
+              <div className="row g-3">
+                <div className="col-md-4 text-center">
+                  <div 
+                    className="p-3 rounded-3"
+                    style={{background: 'rgba(255, 255, 255, 0.05)'}}
+                  >
+                    <h6 className="text-white fw-bold small">João - Fitness</h6>
+                    <p className="text-white-50 small mb-2">500 reviews em 1 dia</p>
+                    <p className="text-white fw-semibold small mb-0" style={{
+                      background: 'linear-gradient(135deg, #10b981, #059669)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text'
+                    }}>
+                      Dominou o nicho
+                    </p>
+                  </div>
                 </div>
-                <div className="col-md-4">
-                  <h6 className="text-white fw-bold">Maria - Receitas</h6>
-                  <p className="text-light small mb-2">300 artigos em 30min</p>
-                  <p className="text-success fw-bold">R$ 8.500/mês</p>
+                <div className="col-md-4 text-center">
+                  <div 
+                    className="p-3 rounded-3"
+                    style={{background: 'rgba(255, 255, 255, 0.05)'}}
+                  >
+                    <h6 className="text-white fw-bold small">Maria - Receitas</h6>
+                    <p className="text-white-50 small mb-2">300 reviews em 30min</p>
+                    <p className="text-white fw-semibold small mb-0" style={{
+                      background: 'linear-gradient(135deg, #10b981, #059669)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text'
+                    }}>
+                      R$ 8.500/mês
+                    </p>
+                  </div>
                 </div>
-                <div className="col-md-4">
-                  <h6 className="text-white fw-bold">Carlos - Tech</h6>
-                  <p className="text-light small mb-2">200 reviews em 15min</p>
-                  <p className="text-success fw-bold">R$ 12.000/mês</p>
+                <div className="col-md-4 text-center">
+                  <div 
+                    className="p-3 rounded-3"
+                    style={{background: 'rgba(255, 255, 255, 0.05)'}}
+                  >
+                    <h6 className="text-white fw-bold small">Carlos - Tech</h6>
+                    <p className="text-white-50 small mb-2">200 reviews em 15min</p>
+                    <p className="text-white fw-semibold small mb-0" style={{
+                      background: 'linear-gradient(135deg, #10b981, #059669)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text'
+                    }}>
+                      R$ 12.000/mês
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </Col>
         </Row>
 
+        {/* CTA */}
         <Row className="justify-content-center mt-5">
           <Col lg={6} className="text-center">
             <Button 
-              variant="warning" 
-              size="lg"
-              className="px-5 py-3 fw-bold fs-5 text-dark"
+              className="px-5 py-3 fw-semibold border-0 rounded-3 mb-3"
+              style={{
+                background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+                color: 'white',
+                fontSize: '16px'
+              }}
               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              🔥 QUERO O BULK MODE AGORA!
+              🔥 Quero a Criação em Massa agora!
             </Button>
-            <p className="mt-3 text-light small">
-              <IconifyIcon icon="tabler:alert-triangle" className="me-1 text-warning" />
+            <p className="text-white-50 small mb-0">
+              <IconifyIcon icon="tabler:alert-triangle" className="me-1" style={{color: '#f59e0b'}} />
               Disponível apenas no plano Black Belt • 27 vagas restantes
             </p>
           </Col>

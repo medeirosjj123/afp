@@ -1,7 +1,7 @@
 'use client'
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import React, { useState } from 'react'
-import { Card, CardBody, Col, Container, Row, Collapse } from 'react-bootstrap'
+import { Col, Container, Row, Collapse } from 'react-bootstrap'
 
 const FAQItem = ({ question, answer, isOpen, onToggle }: {
   question: string
@@ -10,29 +10,36 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: {
   onToggle: () => void
 }) => {
   return (
-    <Card className="mb-3 border-0 shadow-sm">
-      <CardBody className="p-4">
+    <div 
+      className="mb-4 rounded-4"
+      style={{
+        background: 'rgba(255, 255, 255, 0.05)',
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)'
+      }}
+    >
+      <div className="p-4">
         <button
           className="btn btn-link text-decoration-none p-0 w-100 text-start d-flex align-items-center justify-content-between"
           onClick={onToggle}
         >
-          <h5 className="fw-bold text-dark mb-0">{question}</h5>
+          <h6 className="fw-bold text-white mb-0 small">{question}</h6>
           <IconifyIcon 
             icon={isOpen ? "tabler:chevron-up" : "tabler:chevron-down"} 
-            className="text-primary fs-4 flex-shrink-0 ms-3" 
+            className="text-white-50 fs-5 flex-shrink-0 ms-3" 
           />
         </button>
         
         <Collapse in={isOpen}>
           <div className="mt-3">
             <div 
-              className="text-muted"
+              className="text-white-50 small"
               dangerouslySetInnerHTML={{ __html: answer }}
             />
           </div>
         </Collapse>
-      </CardBody>
-    </Card>
+      </div>
+    </div>
   )
 }
 
@@ -58,7 +65,15 @@ const FAQ = () => {
     },
     {
       question: "📚 O curso está incluso no valor?",
-      answer: "Sim! <strong>Curso completo + mentoria semanal + comunidade VIP + suporte</strong>. Tudo incluído sem custo adicional."
+      answer: "Sim! <strong>Curso completo + mentoria semanal + comunidade VIP + suporte</strong>. Tudo incluído sem custo adicional. (Plano Black Belt)"
+    },
+    {
+      question: "📝 A plataforma funciona melhor para reviews?",
+      answer: "Sim! Nossa IA foi <strong>treinada especificamente para reviews</strong> que convertem. Analisa produtos, cria prós/contras, comparações e CTAs automaticamente."
+    },
+    {
+      question: "🛍️ Posso criar reviews de produtos que não conheço?",
+      answer: "Claro! Nossa IA <strong>pesquisa e analisa qualquer produto</strong> automaticamente. Você só precisa informar o produto - ela faz todo o resto!"
     },
     {
       question: "🌐 Preciso pagar hospedagem separadamente?",
@@ -91,15 +106,33 @@ const FAQ = () => {
   ]
 
   return (
-    <section className="section bg-light" id="faq">
+    <section className="py-5" id="faq" style={{background: '#0a0a0a'}}>
       <Container>
-        <Row className="justify-content-center text-center">
+        {/* Section header */}
+        <Row className="justify-content-center text-center mb-5">
           <Col lg={8}>
-            <h2 className="text-dark fw-bold mb-4">
-              ❓ PERGUNTAS MAIS FREQUENTES
+            <div className="mb-3">
+              <span 
+                className="badge rounded-pill px-3 py-2"
+                style={{background: 'rgba(102, 126, 234, 0.2)', color: '#667eea'}}
+              >
+                ❓ Dúvidas frequentes
+              </span>
+            </div>
+            <h2 className="text-white fw-bold mb-3" style={{fontSize: 'clamp(2rem, 5vw, 3rem)'}}>
+              Perguntas mais{' '}
+              <span style={{
+                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
+                frequentes
+              </span>
             </h2>
-            <p className="text-muted fs-5 mb-5">
-              Tiramos as principais dúvidas para você tomar a melhor decisão:
+            <p className="text-white-50 fs-5 mb-0">
+              Tiramos as principais dúvidas para você tomar a{' '}
+              <strong className="text-white">melhor decisão</strong>
             </p>
           </Col>
         </Row>
@@ -120,19 +153,41 @@ const FAQ = () => {
 
         <Row className="justify-content-center mt-5">
           <Col lg={8} className="text-center">
-            <div className="bg-primary text-white rounded p-5">
-              <h3 className="fw-bold mb-3">💬 AINDA TEM DÚVIDAS?</h3>
-              <p className="fs-5 mb-4">
-                Adquira a plataforma e tenha acesso à comunidade VIP exclusiva com mentoria semanal + suporte completo!
-              </p>
-              <button
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn btn-link text-decoration-none p-0"
-              >
-                <div className="bg-white text-primary rounded p-3 d-inline-block">
-                  <h5 className="fw-bold mb-0">🚀 QUERO MINHA PLATAFORMA AGORA!</h5>
+            <div 
+              className="p-4 rounded-4"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              <div className="mb-4">
+                <div 
+                  className="rounded-3 d-flex align-items-center justify-content-center mx-auto mb-3"
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    background: 'linear-gradient(135deg, #667eea, #764ba2)'
+                  }}
+                >
+                  <IconifyIcon icon="tabler:message-question" className="text-white fs-4" />
                 </div>
-              </button>
+                <h4 className="text-white fw-bold mb-3">💬 AINDA TEM DÚVIDAS?</h4>
+                <p className="text-white-50 mb-4">
+                  Adquira a plataforma e tenha acesso à{' '}
+                  <strong className="text-white">comunidade VIP exclusiva</strong> com mentoria semanal + suporte completo!
+                </p>
+                <button
+                  onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="btn border-0 rounded-3 px-4 py-3 fw-semibold"
+                  style={{
+                    background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                    color: 'white'
+                  }}
+                >
+                  🚀 QUERO MINHA PLATAFORMA AGORA!
+                </button>
+              </div>
             </div>
           </Col>
         </Row>

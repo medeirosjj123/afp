@@ -7,145 +7,275 @@ import Link from 'next/link'
 
 const TestimonialCard = ({ description, image, name, role, star }: TestimonialType) => {
   return (
-    <Card className="border-0 shadow-lg border-start border-success border-4">
-      <CardBody className="p-4">
-        <div className="d-flex align-items-start gap-3">
-          <Image src={image} alt="avatar" className="rounded-circle flex-shrink-0" height={80} width={80} />
-          <div className="flex-grow-1">
-            <div className="d-flex align-items-center gap-2 mb-2">
-              <h5 className="text-dark fw-bold m-0">{name}</h5>
-              <span className="badge bg-success text-white small">{star}</span>
-            </div>
-            <p className="text-muted small mb-2">{role}</p>
-            <p className="mb-0 text-dark fw-medium">{description}</p>
-          </div>
+    <div 
+      className="p-4 rounded-4 h-100"
+      style={{
+        background: 'rgba(255, 255, 255, 0.05)',
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+      }}
+    >
+      <div className="d-flex align-items-start gap-3">
+        <div 
+          className="rounded-circle overflow-hidden flex-shrink-0"
+          style={{
+            width: '60px',
+            height: '60px',
+            border: '2px solid rgba(16, 185, 129, 0.3)'
+          }}
+        >
+          <Image src={image} alt="avatar" className="w-100 h-100 object-fit-cover" width={60} height={60} />
         </div>
-      </CardBody>
-    </Card>
+        <div className="flex-grow-1">
+          <div className="d-flex align-items-center gap-2 mb-2">
+            <h6 className="text-white fw-bold m-0 small">{name}</h6>
+            <span 
+              className="badge rounded-pill px-2 py-1"
+              style={{
+                background: 'linear-gradient(135deg, #10b981, #059669)',
+                color: 'white',
+                fontSize: '11px'
+              }}
+            >
+              {star}
+            </span>
+          </div>
+          <p className="text-white-50 small mb-2">{role}</p>
+          <p className="mb-0 text-white-50 small">{description}</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
 const Testimonial = () => {
   return (
-    <section className="section bg-light" id="testimonial">
+    <section className="py-5" id="testimonial" style={{background: '#0a0a0a'}}>
       <Container>
-        <Row className="justify-content-center">
-          <Col lg={7}>
-            <div className="title text-center mb-5">
-              <p className="d-flex align-items-center justify-content-center mb-4">
-                <span className="icon bg-primary rounded d-flex justify-content-center align-items-center">
-                  <IconifyIcon icon="tabler:edit" className="text-white f-18" />
-                </span>
-                <IconifyIcon icon="tabler:line-dashed" className="text-primary fs-5" />
-                <span className="badge bg-primary text-white py-2 px-3 f-14">🔓 SEGREDO #2</span>
-              </p>
-              <h3 className="text-primary fw-bold">IA Cria Conteúdo SEO Perfeito em 1 Clique</h3>
-              <h4 className="text-dark mb-4">&ldquo;Como Nossa IA Escreve Artigos de 2.000+ Palavras Otimizados para o Google&rdquo;</h4>
-              <p className="text-muted fs-5">
-                Enquanto outros gastam HORAS escrevendo um artigo, nossa <strong className="text-primary">IA ESPECIALIZADA</strong> faz tudo automaticamente. 
-                <strong className="text-success">Veja a facilidade da criação de conteúdo:</strong>
-              </p>
+        {/* Section header */}
+        <Row className="justify-content-center text-center mb-5">
+          <Col lg={8}>
+            <div className="mb-3">
+              <span 
+                className="badge rounded-pill px-3 py-2"
+                style={{background: 'rgba(102, 126, 234, 0.2)', color: '#667eea'}}
+              >
+                🔓 Segredo #2
+              </span>
+            </div>
+            <h2 className="text-white fw-bold mb-3" style={{fontSize: 'clamp(2rem, 5vw, 3rem)'}}>
+              IA especialista em{' '}
+              <span style={{
+                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>
+                reviews que convertem
+              </span>
+            </h2>
+            <p className="text-white-50 fs-5 mb-4">
+              Enquanto outros gastam <strong className="text-white">HORAS</strong> criando um review,<br />
+              nossa IA especializada cria reviews completos que <strong className="text-white">realmente vendem</strong>
+            </p>
+          </Col>
+        </Row>
+
+        {/* Reviews Demo Grid */}
+        <Row className="g-4">
+          <Col lg={6}>
+            <div 
+              className="p-4 rounded-4 h-100"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+              }}
+            >
+              <div className="mb-3">
+                <div 
+                  className="rounded-3 d-flex align-items-center justify-content-center mb-3"
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    background: 'linear-gradient(135deg, #ef4444, #dc2626)'
+                  }}
+                >
+                  <IconifyIcon icon="tabler:device-mobile" className="text-white fs-4" />
+                </div>
+                <h5 className="text-white fw-bold mb-2">Reviews de Produtos</h5>
+                <p className="text-white-50 small mb-3">
+                  IA analisa especificações técnicas, cria prós e contras automaticamente, 
+                  gera comparações com concorrentes
+                </p>
+                <div className="bg-success bg-opacity-10 rounded p-2 mb-2">
+                  <p className="text-white small mb-0">✓ iPhone 15 vs Samsung Galaxy S24</p>
+                </div>
+                <div className="bg-success bg-opacity-10 rounded p-2">
+                  <p className="text-white small mb-0">✓ 2.847 palavras em 90 segundos</p>
+                </div>
+              </div>
+            </div>
+          </Col>
+          
+          <Col lg={6}>
+            <div 
+              className="p-4 rounded-4 h-100"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+              }}
+            >
+              <div className="mb-3">
+                <div 
+                  className="rounded-3 d-flex align-items-center justify-content-center mb-3"
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    background: 'linear-gradient(135deg, #10b981, #059669)'
+                  }}
+                >
+                  <IconifyIcon icon="tabler:tools" className="text-white fs-4" />
+                </div>
+                <h5 className="text-white fw-bold mb-2">Reviews de Serviços</h5>
+                <p className="text-white-50 small mb-3">
+                  Avaliação detalhada de features, análise de custo-benefício, 
+                  recomendações personalizadas
+                </p>
+                <div className="bg-success bg-opacity-10 rounded p-2 mb-2">
+                  <p className="text-white small mb-0">✓ Canva vs Adobe Creative Suite</p>
+                </div>
+                <div className="bg-success bg-opacity-10 rounded p-2">
+                  <p className="text-white small mb-0">✓ Score SEO: 98% otimizado</p>
+                </div>
+              </div>
+            </div>
+          </Col>
+          
+          <Col lg={6}>
+            <div 
+              className="p-4 rounded-4 h-100"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+              }}
+            >
+              <div className="mb-3">
+                <div 
+                  className="rounded-3 d-flex align-items-center justify-content-center mb-3"
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    background: 'linear-gradient(135deg, #f59e0b, #d97706)'
+                  }}
+                >
+                  <IconifyIcon icon="tabler:cash" className="text-white fs-4" />
+                </div>
+                <h5 className="text-white fw-bold mb-2">Reviews de Afiliados</h5>
+                <p className="text-white-50 small mb-3">
+                  Otimizado para conversão, CTAs estratégicos, 
+                  links de afiliado automatizados
+                </p>
+                <div className="bg-success bg-opacity-10 rounded p-2 mb-2">
+                  <p className="text-white small mb-0">✓ Taxa de conversão: +340%</p>
+                </div>
+                <div className="bg-success bg-opacity-10 rounded p-2">
+                  <p className="text-white small mb-0">✓ Links automáticos Amazon/Hotmart</p>
+                </div>
+              </div>
+            </div>
+          </Col>
+          
+          <Col lg={6}>
+            <div 
+              className="p-4 rounded-4 h-100"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+              }}
+            >
+              <div className="mb-3">
+                <div 
+                  className="rounded-3 d-flex align-items-center justify-content-center mb-3"
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    background: 'linear-gradient(135deg, #667eea, #764ba2)'
+                  }}
+                >
+                  <IconifyIcon icon="tabler:chart-line" className="text-white fs-4" />
+                </div>
+                <h5 className="text-white fw-bold mb-2">Métricas de Performance</h5>
+                <p className="text-white-50 small mb-3">
+                  Cada review sai otimizado, pronto para ranquear 
+                  e converter desde o primeiro dia
+                </p>
+                <div className="bg-success bg-opacity-10 rounded p-2 mb-2">
+                  <p className="text-white small mb-0">✓ 2.000+ palavras por review</p>
+                </div>
+                <div className="bg-success bg-opacity-10 rounded p-2">
+                  <p className="text-white small mb-0">✓ Tempo médio: 2 minutos</p>
+                </div>
+              </div>
             </div>
           </Col>
         </Row>
-        <Row className="g-4">
-          <Col lg={6}>
-            <Card className="border-0 shadow-lg">
-              <CardBody className="p-4">
-                <div className="d-flex align-items-start gap-3 mb-3">
-                  <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" 
-                       style={{width: '60px', height: '60px'}}>
-                    <IconifyIcon icon="tabler:robot" className="fs-4 text-white" />
-                  </div>
-                  <div className="flex-grow-1">
-                    <h5 className="text-dark fw-bold mb-2">🎬 Vídeo: IA Criando Artigo SEO</h5>
-                    <p className="text-muted mb-3">
-                      Assista nossa IA escrever um artigo completo de 2.000+ palavras, 
-                      otimizado para SEO, em menos de 2 minutos!
-                    </p>
-                  </div>
-                </div>
-                <div className="position-relative">
-                  <div className="ratio ratio-16x9">
-                    <iframe 
-                      src="https://player.vimeo.com/video/1113039059?h=142d695c97&title=0&byline=0&portrait=0" 
-                      width="100%" 
-                      height="100%" 
-                      frameBorder="0" 
-                      allow="autoplay; fullscreen; picture-in-picture" 
-                      allowFullScreen
-                      className="rounded"
-                    ></iframe>
-                  </div>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
 
-          <Col lg={6}>
-            <Card className="border-0 shadow-lg">
-              <CardBody className="p-4">
-                <div className="mb-4">
-                  <div className="d-flex align-items-start gap-3 mb-3">
-                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" 
-                         style={{width: '60px', height: '60px'}}>
-                      <IconifyIcon icon="tabler:search" className="fs-4" />
-                    </div>
-                    <div className="flex-grow-1">
-                      <h5 className="text-dark fw-bold mb-2">⚡ O Que Nossa IA Faz Automaticamente:</h5>
+        {/* Video Demo Section */}
+        <Row className="justify-content-center mt-5">
+          <Col lg={10}>
+            <div 
+              className="p-4 rounded-4"
+              style={{
+                background: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              <div className="row align-items-center">
+                <div className="col-lg-6 mb-4 mb-lg-0">
+                  <div className="mb-3">
+                    <div 
+                      className="rounded-3 d-flex align-items-center justify-content-center mb-3"
+                      style={{
+                        width: '48px',
+                        height: '48px',
+                        background: 'linear-gradient(135deg, #667eea, #764ba2)'
+                      }}
+                    >
+                      <IconifyIcon icon="tabler:robot" className="text-white fs-4" />
                     </div>
                   </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="d-flex align-items-start gap-3 mb-3">
-                    <IconifyIcon icon="tabler:check" className="text-success fs-5 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="fw-bold mb-1">Pesquisa de Palavras-chave</p>
-                      <p className="text-muted small mb-0">Encontra automaticamente as keywords mais lucrativas</p>
-                    </div>
-                  </div>
-
-                  <div className="d-flex align-items-start gap-3 mb-3">
-                    <IconifyIcon icon="tabler:check" className="text-success fs-5 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="fw-bold mb-1">Estrutura SEO Perfeita</p>
-                      <p className="text-muted small mb-0">H1, H2, H3 otimizados para o Google</p>
-                    </div>
-                  </div>
-
-                  <div className="d-flex align-items-start gap-3 mb-3">
-                    <IconifyIcon icon="tabler:check" className="text-success fs-5 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="fw-bold mb-1">Meta Description + Título</p>
-                      <p className="text-muted small mb-0">Otimizados para máxima taxa de clique</p>
-                    </div>
-                  </div>
-
-                  <div className="d-flex align-items-start gap-3 mb-3">
-                    <IconifyIcon icon="tabler:check" className="text-success fs-5 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="fw-bold mb-1">Conteúdo de 2.000+ Palavras</p>
-                      <p className="text-muted small mb-0">Artigos completos e informativos que Google ama</p>
-                    </div>
-                  </div>
-
-                  <div className="d-flex align-items-start gap-3 mb-3">
-                    <IconifyIcon icon="tabler:check" className="text-success fs-5 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="fw-bold mb-1">Links Internos Automáticos</p>
-                      <p className="text-muted small mb-0">Estrutura de links para autoridade do site</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-success bg-opacity-10 rounded p-3 mt-4">
-                  <p className="text-dark fw-bold text-center mb-0">
-                    ⏱️ Tempo: 2 minutos vs 3-4 horas manualmente!
+                  <h4 className="text-white fw-bold mb-3">🎬 Vídeo: IA criando review completo</h4>
+                  <p className="text-white-50 mb-0">
+                    Assista nossa IA escrever um review completo de 2.000+ palavras, 
+                    otimizado para SEO e conversão, em menos de 2 minutos!
                   </p>
                 </div>
-              </CardBody>
-            </Card>
+                <div className="col-lg-6">
+                  <div 
+                    className="rounded-4 overflow-hidden"
+                    style={{background: 'rgba(255, 255, 255, 0.05)'}}
+                  >
+                    <div className="ratio ratio-16x9">
+                      <iframe 
+                        src="https://player.vimeo.com/video/1114994833?h=0da962d18b&title=0&byline=0&portrait=0" 
+                        width="100%" 
+                        height="100%" 
+                        frameBorder="0" 
+                        allow="autoplay; fullscreen; picture-in-picture" 
+                        allowFullScreen
+                        className="rounded-3"
+                        style={{filter: 'brightness(0.9)'}}
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
